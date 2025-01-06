@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>鲁迅故里 - 绍兴印象</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="../spot-detail.css">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav>
+        <div class="nav-content">
+            <h1>绍兴印象</h1>
+            <ul>
+                <li><a href="../index.html#intro">简介</a></li>
+                <li><a href="../index.html#spots">景点</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="spot-detail">
+        <div class="spot-header">
+            <img src="../images/1.jpg" alt="鲁迅故里">
+            <h1>鲁迅故里</h1>
+        </div>
+
+        <div class="spot-content">
+            <section class="spot-info">
+                <h2>景点介绍</h2>
+                <p>鲁迅故里位于绍兴市越城区，是中国现代文学巨匠鲁迅先生的故居。这里不仅保存了鲁迅童年和青少年时期生活的环境，也是了解鲁迅先生生平、研究其作品的重要场所。</p>
+            </section>
+
+            <section class="spot-features">
+                <h2>特色亮点</h2>
+                <ul>
+                    <li>三味书屋：鲁迅少年时期求学的地方</li>
+                    <li>百草园：《从百草园到三味书屋》中的场景</li>
+                    <li>鲁迅故居：保存完好的清代民居建筑群</li>
+                    <li>文物展示：丰富的鲁迅相关文物与史料</li>
+                </ul>
+            </section>
+
+            <section class="spot-visit-info">
+                <h2>参观信息</h2>
+                <div class="info-grid">
+                    <div class="info-item">
+                        <h3>开放时间</h3>
+                        <p>全年开放 08:00-17:00</p>
+                    </div>
+                    <div class="info-item">
+                        <h3>门票价格</h3>
+                        <p>￥40/人</p>
+                    </div>
+                    <div class="info-item">
+                        <h3>交通方式</h3>
+                        <p>乘坐公交1路、2路到鲁迅故里站下车</p>
+                    </div>
+                    <div class="info-item">
+                        <h3>建议游览</h3>
+                        <p>2-3小时</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="spot-location">
+                <h2>地理位置</h2>
+                <div class="location-info">
+                    <div class="location-details">
+                        <p><strong>详细地址：</strong>浙江省绍兴市越城区鲁迅中路241号</p>
+                        <p><strong>所属区域：</strong>越城区</p>
+                        <p><strong>周边地标：</strong>咸亨酒店、百草园、三味书屋</p>
+                        <p><strong>交通方式：</strong>
+                            <br>- 公交：乘坐101路、201路到鲁迅故里站下车
+                            <br>- 自驾：导航"鲁迅故里"即可
+                        </p>
+                    </div>
+                    <div class="location-map">
+                        <iframe src="https://map.baidu.com/poi/鲁迅故里/@13374758.465,3393464.94,19z" frameborder="0"></iframe>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- 页脚 -->
+    <footer>
+        <p>© 2024 绍兴印象</p>
+    </footer>
+
+    <div class="back-to-top">↑</div>
+
+    <script>
+        // 返回顶部按钮
+        const backToTop = document.querySelector('.back-to-top');
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 300) {
+                backToTop.classList.add('visible');
+            } else {
+                backToTop.classList.remove('visible');
+            }
+        });
+
+        backToTop.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+    </script>
+</body>
+</html> 

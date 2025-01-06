@@ -1,0 +1,103 @@
+/* 美人详情页样式 */
+.beauty-detail {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 2rem;
+}
+
+.beauty-header {
+    position: relative;
+    margin-bottom: 3rem;
+    height: 70vh;
+    overflow: hidden;
+    border-radius: 12px;
+}
+
+.beauty-header img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.beauty-header h1 {
+    position: absolute;
+    bottom: 2rem;
+    left: 2rem;
+    color: white;
+    font-size: 3rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.beauty-content {
+    display: grid;
+    gap: 3rem;
+}
+
+.beauty-content section {
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.beauty-content h2 {
+    color: #333;
+    margin-bottom: 1.5rem;
+    font-size: 1.8rem;
+}
+
+.beauty-works ul {
+    list-style: none;
+    display: grid;
+    gap: 1rem;
+}
+
+.beauty-works li {
+    padding-left: 1.5rem;
+    position: relative;
+}
+
+.beauty-works li::before {
+    content: "•";
+    color: #e67e22;
+    font-size: 1.5rem;
+    position: absolute;
+    left: 0;
+}
+
+.achievements-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.achievement-item {
+    background: #f8f9fa;
+    padding: 1.5rem;
+    border-radius: 8px;
+}
+
+.achievement-item h3 {
+    color: #e67e22;
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+    .beauty-header {
+        height: 40vh;
+    }
+
+    .beauty-header h1 {
+        font-size: 2rem;
+    }
+
+    .beauty-content {
+        gap: 2rem;
+    }
+
+    .achievements-grid {
+        grid-template-columns: 1fr;
+    }
+} 

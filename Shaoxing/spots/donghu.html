@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>东湖景区 - 绍兴印象</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="../spot-detail.css">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav>
+        <div class="nav-content">
+            <h1>绍兴印象</h1>
+            <ul>
+                <li><a href="../index.html#intro">简介</a></li>
+                <li><a href="../index.html#spots">景点</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="spot-detail">
+        <div class="spot-header">
+            <img src="../images/2.jpg" alt="东湖">
+            <h1>东湖景区</h1>
+        </div>
+
+        <div class="spot-content">
+            <section class="spot-info">
+                <h2>景点介绍</h2>
+                <p>东湖是绍兴市区最大的天然湖泊，湖水清澈，风景秀丽。湖区内亭台楼阁点缀其间，绿树环绕，是市民休闲娱乐和游客观光的理想去处。</p>
+            </section>
+
+            <section class="spot-features">
+                <h2>特色亮点</h2>
+                <ul>
+                    <li>自然景观：广阔湖面，碧波荡漾</li>
+                    <li>园林建筑：古典园林与现代设施完美结合</li>
+                    <li>休闲活动：划船、垂钓、漫步等多种娱乐方式</li>
+                    <li>文化底蕴：历史悠久，人文景观丰富</li>
+                </ul>
+            </section>
+
+            <section class="spot-visit-info">
+                <h2>参观信息</h2>
+                <div class="info-grid">
+                    <div class="info-item">
+                        <h3>开放时间</h3>
+                        <p>全天开放</p>
+                    </div>
+                    <div class="info-item">
+                        <h3>门票价格</h3>
+                        <p>免费开放</p>
+                    </div>
+                    <div class="info-item">
+                        <h3>交通方式</h3>
+                        <p>乘坐公交K101、K102路到东湖公园站下车</p>
+                    </div>
+                    <div class="info-item">
+                        <h3>建议游览</h3>
+                        <p>2-3小时</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="spot-location">
+                <h2>地理位置</h2>
+                <div class="location-info">
+                    <div class="location-details">
+                        <p><strong>详细地址：</strong>浙江省绍兴市越城区东湖路</p>
+                        <p><strong>所属区域：</strong>越城区</p>
+                        <p><strong>周边地标：</strong>东湖公园、东湖游船码头</p>
+                        <p><strong>交通方式：</strong>
+                            <br>- 公交：乘坐K101、K102路到东湖公园站下车
+                            <br>- 自驾：导航"绍兴东湖景区"即可
+                        </p>
+                    </div>
+                    <div class="location-map">
+                        <iframe src="https://map.baidu.com/poi/东湖公园/@13375758.465,3393864.94,19z" frameborder="0"></iframe>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- 页脚 -->
+    <footer>
+        <p>© 2024 绍兴印象</p>
+    </footer>
+
+    <div class="back-to-top">↑</div>
+
+    <script>
+        // 返回顶部按钮
+        const backToTop = document.querySelector('.back-to-top');
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 300) {
+                backToTop.classList.add('visible');
+            } else {
+                backToTop.classList.remove('visible');
+            }
+        });
+
+        backToTop.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+    </script>
+</body>
+</html> 

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>大雁塔 - 绍兴印象</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="../spot-detail.css">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav>
+        <div class="nav-content">
+            <h1>绍兴印象</h1>
+            <ul>
+                <li><a href="../index.html#intro">简介</a></li>
+                <li><a href="../index.html#spots">景点</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="spot-detail">
+        <div class="spot-header">
+            <img src="../images/8.jpg" alt="大雁塔">
+            <h1>大雁塔</h1>
+        </div>
+
+        <div class="spot-content">
+            <section class="spot-info">
+                <h2>景点介绍</h2>
+                <p>大雁塔是绍兴市区的标志性建筑，塔身高耸挺拔，造型独特。它不仅是城市的重要地标，也是观赏绍兴城市风貌的绝佳制高点。</p>
+            </section>
+
+            <section class="spot-features">
+                <h2>特色亮点</h2>
+                <ul>
+                    <li>现代建筑：独特的建筑设计风格</li>
+                    <li>观景平台：360度全景观赏绍兴市容</li>
+                    <li>文化展示：展现现代绍兴的发展成就</li>
+                    <li>城市地标：绍兴新城区的象征</li>
+                </ul>
+            </section>
+
+            <section class="spot-visit-info">
+                <h2>参观信息</h2>
+                <div class="info-grid">
+                    <div class="info-item">
+                        <h3>开放时间</h3>
+                        <p>09:00-21:00</p>
+                    </div>
+                    <div class="info-item">
+                        <h3>门票价格</h3>
+                        <p>￥30/人</p>
+                    </div>
+                    <div class="info-item">
+                        <h3>交通方式</h3>
+                        <p>乘坐公交K105路到大雁塔站下车</p>
+                    </div>
+                    <div class="info-item">
+                        <h3>建议游览</h3>
+                        <p>1-2小时</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="spot-location">
+                <h2>地理位置</h2>
+                <div class="location-info">
+                    <div class="location-details">
+                        <p><strong>详细地址：</strong>浙江省绍兴市越城区大雁塔景区</p>
+                        <p><strong>所属区域：</strong>越城区</p>
+                        <p><strong>周边地标：</strong>绍兴科技城、城市商业中心</p>
+                        <p><strong>交通方式：</strong>
+                            <br>- 公交：乘坐K105路到大雁塔站下车
+                            <br>- 自驾：导航"绍兴大雁塔"即可
+                        </p>
+                    </div>
+                    <div class="location-map">
+                        <iframe src="https://map.baidu.com/poi/绍兴大雁塔/@13374558.465,3393264.94,19z" frameborder="0"></iframe>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- 页脚 -->
+    <footer>
+        <p>© 2024 绍兴印象</p>
+    </footer>
+
+    <div class="back-to-top">↑</div>
+
+    <script>
+        // 返回顶部按钮
+        const backToTop = document.querySelector('.back-to-top');
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 300) {
+                backToTop.classList.add('visible');
+            } else {
+                backToTop.classList.remove('visible');
+            }
+        });
+
+        backToTop.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+    </script>
+</body>
+</html> 

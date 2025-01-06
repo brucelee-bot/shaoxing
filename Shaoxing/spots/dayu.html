@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>大禹陵 - 绍兴印象</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="../spot-detail.css">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav>
+        <div class="nav-content">
+            <h1>绍兴印象</h1>
+            <ul>
+                <li><a href="../index.html#intro">简介</a></li>
+                <li><a href="../index.html#spots">景点</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="spot-detail">
+        <div class="spot-header">
+            <img src="../images/4.jpg" alt="大禹陵">
+            <h1>大禹陵</h1>
+        </div>
+
+        <div class="spot-content">
+            <section class="spot-info">
+                <h2>景点介绍</h2>
+                <p>大禹陵是纪念中国上古时期治水英雄大禹的陵墓，位于绍兴市越城区内。这里不仅是重要的历史文化遗址，也是了解中国治水历史和大禹精神的重要场所。</p>
+            </section>
+
+            <section class="spot-features">
+                <h2>特色亮点</h2>
+                <ul>
+                    <li>禹陵祠堂：供奉大禹的主要建筑</li>
+                    <li>治水碑廊：展示大禹治水的历史功绩</li>
+                    <li>古建筑群：保存完好的明清建筑群</li>
+                    <li>文化展馆：展示大禹及治水文化</li>
+                </ul>
+            </section>
+
+            <section class="spot-visit-info">
+                <h2>参观信息</h2>
+                <div class="info-grid">
+                    <div class="info-item">
+                        <h3>开放时间</h3>
+                        <p>08:00-17:00</p>
+                    </div>
+                    <div class="info-item">
+                        <h3>门票价格</h3>
+                        <p>￥45/人</p>
+                    </div>
+                    <div class="info-item">
+                        <h3>交通方式</h3>
+                        <p>乘坐公交K115路到大禹陵站下车</p>
+                    </div>
+                    <div class="info-item">
+                        <h3>建议游览</h3>
+                        <p>1.5-2小时</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="spot-location">
+                <h2>地理位置</h2>
+                <div class="location-info">
+                    <div class="location-details">
+                        <p><strong>详细地址：</strong>浙江省绍兴市越城区会稽山大禹陵景区</p>
+                        <p><strong>所属区域：</strong>越城区</p>
+                        <p><strong>周边地标：</strong>会稽山、禹陵公园、大禹庙</p>
+                        <p><strong>交通方式：</strong>
+                            <br>- 公交：乘坐K115路到大禹陵站下车
+                            <br>- 自驾：导航"大禹陵景区"即可
+                        </p>
+                    </div>
+                    <div class="location-map">
+                        <iframe src="https://map.baidu.com/poi/大禹陵/@13374958.465,3393664.94,19z" frameborder="0"></iframe>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- 页脚 -->
+    <footer>
+        <p>© 2024 绍兴印象</p>
+    </footer>
+
+    <div class="back-to-top">↑</div>
+
+    <script>
+        // 返回顶部按钮
+        const backToTop = document.querySelector('.back-to-top');
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 300) {
+                backToTop.classList.add('visible');
+            } else {
+                backToTop.classList.remove('visible');
+            }
+        });
+
+        backToTop.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+    </script>
+</body>
+</html> 

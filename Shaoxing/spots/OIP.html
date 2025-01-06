@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>兜率天宫 - 绍兴印象</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="../spot-detail.css">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav>
+        <div class="nav-content">
+            <h1>绍兴印象</h1>
+            <ul>
+                <li><a href="../index.html#intro">简介</a></li>
+                <li><a href="../index.html#spots">景点</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="spot-detail">
+        <div class="spot-header">
+            <img src="../images/9.jpg" alt="兜率天宫">
+            <h1>兜率天宫</h1>
+        </div>
+
+        <div class="spot-content">
+            <section class="spot-info">
+                <h2>景点介绍</h2>
+                <p>兜率天宫位于绍兴市区，是一座历史悠久的道教宫观。它建于唐代，历经千年沧桑，至今保存完好。宫观依山而建，环境幽静，是绍兴重要的道教文化遗产。</p>
+            </section>
+
+            <section class="spot-features">
+                <h2>特色亮点</h2>
+                <ul>
+                    <li>千年古刹：始建于唐代，历史文化底蕴深厚</li>
+                    <li>建筑特色：保留了传统道教建筑风格</li>
+                    <li>文化价值：是研究道教文化的重要场所</li>
+                    <li>自然环境：依山而建，环境清幽，景色宜人</li>
+                </ul>
+            </section>
+
+            <section class="spot-visit-info">
+                <h2>参观信息</h2>
+                <div class="info-grid">
+                    <div class="info-item">
+                        <h3>开放时间</h3>
+                        <p>全年开放 08:00-17:00</p>
+                    </div>
+                    <div class="info-item">
+                        <h3>门票价格</h3>
+                        <p>￥30/人</p>
+                    </div>
+                    <div class="info-item">
+                        <h3>交通方式</h3>
+                        <p>乘坐公交车K101、K102路到兜率天宫站下车</p>
+                    </div>
+                    <div class="info-item">
+                        <h3>建议游览</h3>
+                        <p>1-2小时</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="spot-location">
+                <h2>地理位置</h2>
+                <div class="location-info">
+                    <div class="location-details">
+                        <p><strong>详细地址：</strong>浙江省绍兴市越城区兜率天宫景区</p>
+                        <p><strong>所属区域：</strong>越城区</p>
+                        <p><strong>周边地标：</strong>会稽山、大禹陵</p>
+                        <p><strong>交通方式：</strong>
+                            <br>- 公交：乘坐K116路到兜率天宫站下车
+                            <br>- 自驾：导航"兜率天宫"即可
+                        </p>
+                    </div>
+                    <div class="location-map">
+                        <iframe src="https://map.baidu.com/poi/兜率天宫/@13374458.465,3393164.94,19z" frameborder="0"></iframe>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- 页脚 -->
+    <footer>
+        <p>© 2024 绍兴印象</p>
+    </footer>
+
+    <div class="back-to-top">↑</div>
+
+    <script>
+        // 返回顶部按钮
+        const backToTop = document.querySelector('.back-to-top');
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 300) {
+                backToTop.classList.add('visible');
+            } else {
+                backToTop.classList.remove('visible');
+            }
+        });
+
+        backToTop.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+    </script>
+</body>
+</html> 

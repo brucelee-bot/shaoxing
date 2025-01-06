@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>单陈辛芝 - 绍兴印象</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="../beauty-detail.css">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav>
+        <div class="nav-content">
+            <h1>绍兴印象</h1>
+            <ul>
+                <li><a href="../index.html#intro">简介</a></li>
+                <li><a href="../index.html#spots">景点</a></li>
+                <li><a href="../index.html#beauties">美人</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="beauty-detail">
+        <div class="beauty-header">
+            <img src="../images/shanchenxinzhi.jpg" alt="单陈辛芝">
+            <h1>单陈辛芝</h1>
+        </div>
+
+        <div class="beauty-content">
+            <section class="beauty-info">
+                <h2>个人简介</h2>
+                <p>单陈辛芝，绍兴籍知名演员，毕业于中央戏剧学院表演系。凭借扎实的演技和独特的气质，在多部影视作品中塑造了令人印象深刻的角色。</p>
+            </section>
+
+            <section class="beauty-works">
+                <h2>代表作品</h2>
+                <ul>
+                    <li>《人世间》</li>
+                    <li>《山河月明》</li>
+                    <li>《大江大河》</li>
+                    <li>《觉醒年代》</li>
+                </ul>
+            </section>
+
+            <section class="beauty-achievements">
+                <h2>主要成就</h2>
+                <div class="achievements-grid">
+                    <div class="achievement-item">
+                        <h3>获奖经历</h3>
+                        <p>多次获得电视节目奖项</p>
+                    </div>
+                    <div class="achievement-item">
+                        <h3>演艺经历</h3>
+                        <p>参演多部优秀影视作品</p>
+                    </div>
+                    <div class="achievement-item">
+                        <h3>社会贡献</h3>
+                        <p>积极参与公益活动</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- 页脚 -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>关于绍兴</h3>
+                <ul>
+                    <li><a href="../index.html#intro">城市简介</a></li>
+                    <li><a href="../index.html#spots">景点导览</a></li>
+                    <li><a href="../index.html#beauties">绍兴美人</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>更多信息</h3>
+                <ul>
+                    <li><a href="#">新闻动态</a></li>
+                    <li><a href="#">活动资讯</a></li>
+                    <li><a href="#">联系我们</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2024 绍兴印象 版权所有</p>
+        </div>
+    </footer>
+
+    <div class="back-to-top">↑</div>
+
+    <script>
+        // 返回顶部按钮
+        const backToTop = document.querySelector('.back-to-top');
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 300) {
+                backToTop.classList.add('visible');
+            } else {
+                backToTop.classList.remove('visible');
+            }
+        });
+
+        backToTop.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+    </script>
+</body>
+</html> 

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>蒋飞 - 绍兴印象</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="../beauty-detail.css">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav>
+        <div class="nav-content">
+            <h1>绍兴印象</h1>
+            <ul>
+                <li><a href="../index.html#intro">简介</a></li>
+                <li><a href="../index.html#spots">景点</a></li>
+                <li><a href="../index.html#beauties">美人</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="beauty-detail">
+        <div class="beauty-header">
+            <img src="../images/jiangfei.jpg" alt="蒋飞">
+            <h1>蒋飞</h1>
+        </div>
+
+        <div class="beauty-content">
+            <section class="beauty-info">
+                <h2>个人简介</h2>
+                <p>蒋飞，绍兴籍著名主持人，现任浙江卫视主持人。以其独特的主持风格和亲和力深受观众喜爱，是浙江电视台的当家花旦之一。</p>
+            </section>
+
+            <section class="beauty-works">
+                <h2>代表节目</h2>
+                <ul>
+                    <li>《中国好声音》</li>
+                    <li>《奔跑吧兄弟》</li>
+                    <li>《我们的歌》</li>
+                    <li>《浙江新闻联播》</li>
+                </ul>
+            </section>
+
+            <section class="beauty-achievements">
+                <h2>主要成就</h2>
+                <div class="achievements-grid">
+                    <div class="achievement-item">
+                        <h3>主持风格</h3>
+                        <p>亲和大方，专业稳重</p>
+                    </div>
+                    <div class="achievement-item">
+                        <h3>获奖经历</h3>
+                        <p>多次获得主持人大奖</p>
+                    </div>
+                    <div class="achievement-item">
+                        <h3>社会影响</h3>
+                        <p>积极参与公益事业</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- 页脚 -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>关于绍兴</h3>
+                <ul>
+                    <li><a href="../index.html#intro">城市简介</a></li>
+                    <li><a href="../index.html#spots">景点导览</a></li>
+                    <li><a href="../index.html#beauties">绍兴美人</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>更多信息</h3>
+                <ul>
+                    <li><a href="#">新闻动态</a></li>
+                    <li><a href="#">活动资讯</a></li>
+                    <li><a href="#">联系我们</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2024 绍兴印象 版权所有</p>
+        </div>
+    </footer>
+
+    <div class="back-to-top">↑</div>
+
+    <script>
+        // 返回顶部按钮
+        const backToTop = document.querySelector('.back-to-top');
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 300) {
+                backToTop.classList.add('visible');
+            } else {
+                backToTop.classList.remove('visible');
+            }
+        });
+
+        backToTop.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+    </script>
+</body>
+</html> 
